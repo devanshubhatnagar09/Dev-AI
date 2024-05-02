@@ -3,7 +3,7 @@ async function handledata() {
     // input = ""; 
     usermessage()
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
-    // const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBNspotzIRkUPXzwlJcdhcxtDPI8IIFyLI';
+    // const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=';
     const requestBody = {
         contents: [{
             parts: [{
