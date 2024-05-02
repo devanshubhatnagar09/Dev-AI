@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/env.js"></script>
+<title>Dev-AI</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    input[type="text"]:focus {
+        outline: none;
+    }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .chat-box {
+    height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    background-image: url(/Screenshot_12.png);
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    background-position-y: center;
+  }
+  .message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: fit-content;
+  }
+  .usermessage{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  .user-message {
+    text-align: right;
+    border-radius: 5px 0px 0px 5px;
+
+  }
+  .bot-message {
+    text-align: left;
+  }
+  .input-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .input-text {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  .search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="chat-box" id="chatBox">
+    <div class="message bot-message" id="bot">Welcome! How can I assist you today?</div>
+  </div>
+  <!-- <form id="chatForm" method="post" action="/hit"> -->
+    <div class="input-box">
+      <input type="text" id="userInput" name="input" class="input-text" placeholder="Type your message...">
+      <button onclick="handledata()" class="search-button">Send</button>
+    </div>
+  <!-- </form> -->
+
+
+</div>
+<footer>
+    <h3>Copyright Reserved &copy;Devanshu Bhatnagar</h3>
+  </footer>
+<script src="/script.js"></script>
+</body>
+</html>
